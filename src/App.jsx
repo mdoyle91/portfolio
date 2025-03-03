@@ -1,5 +1,7 @@
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Projects from "./components/Projects/Projects.jsx";
+// import { useState } from "react";  From review of changing state--not sure that will be needed for the creation of this portfolio
+import "./App.css";
 
 const projects = [
   {
@@ -23,8 +25,11 @@ const navLinks = [
 ];
 
 const App = () => {
+  // const [isDarkMode, setIsDarkMode] = useState(false); From review of changing state--not sure that will be needed for the creation of this portfolio
+
   return (
     <>
+      {/* <div className={isDarkMode ? "dark" : "light"}> From review of changing state--not sure that will be needed for the creation of this portfolio*/}
       <Navbar links={navLinks} />
       <main>
         <h1>Hello, world!</h1>
@@ -35,6 +40,7 @@ const App = () => {
           <Projects key={project.id} {...project} /> //Not sure if I want to use the spread operator  here or project={project}
         ))}
       </ul>
+      {/* </div> */}
     </>
   );
 };
