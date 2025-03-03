@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import NavbarLink from "../NavbarLink/NavbarLink.jsx";
+//WilL probably want to use react-router-dom for this as it's a SPA. Checkout React-Router's Navlink function--more info on React Router DOM-Creating Links
 
 const Navbar = ({ links }) => {
   return (
