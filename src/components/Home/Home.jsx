@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <>
@@ -7,7 +9,9 @@ const Home = () => {
         <h1>based in Brooklyn.</h1>
       </div>
       <div className="home-second-section">
-        <h2>About</h2>
+        <h2>
+          <Link to="/about">About</Link>
+        </h2>
         <p>
           I am a full-stack developer dedicated to crafting seamless,
           user-friendly experiences. My background in medical market research
@@ -18,12 +22,20 @@ const Home = () => {
         </p>
       </div>
       <div className="home-third-section">
-        <h2>Projects</h2>
+        <h2>
+          <Link to="/projects">Projects</Link>
+        </h2>
         <div className="home-project-one">
-          <h3>LinguaFranca</h3>
+          <h3>
+            <Link to="/projects/linguafranca">LinguaFranca</Link>
+          </h3>
+          <p>Django.py/PostgreSQL</p>
         </div>
         <div className="home-project-two">
-          <h3>NYC Tow Locator</h3>
+          <h3>
+            <Link to="projects/towlocator">NYC Tow Locator</Link>
+          </h3>
+          <p>Node.js/Express/MongoDB/Javascript</p>
         </div>
       </div>
     </>

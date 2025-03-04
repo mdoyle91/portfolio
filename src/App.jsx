@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Home from "./components/Home/Home.jsx";
 import Projects from "./components/Projects/Projects.jsx";
