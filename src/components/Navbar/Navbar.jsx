@@ -10,13 +10,19 @@ const Navbar = ({ links }) => {
       <nav>
         <h3>Mike Doyle</h3>
         <h3>Full-Stack Developer</h3>
-        <Link to="https://github.com/mdoyle91">
+        <Link
+          to="https://github.com/mdoyle91"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
-          GitHub
         </Link>
-        <Link to="https://www.linkedin.com/in/michaeldoyle91/">
+        <Link
+          to="https://www.linkedin.com/in/michaeldoyle91/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin />
-          LinkedIn
         </Link>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
