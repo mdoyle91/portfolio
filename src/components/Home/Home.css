@@ -1,0 +1,107 @@
+.home-first-section {
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.home-first-section h1 {
+  font-size: 3rem;
+  color: white;
+  margin: 10px 0;
+  text-align: left; /* Align text to the left */
+}
+
+.home-second-section {
+  padding: 40px;
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+  color: white; /* Text color */
+}
+
+.home-second-section::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: white; /* White line */
+}
+
+.home-second-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.home-second-section p {
+  font-size: 1.2rem;
+  color: #bbb;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left; /* Align text to the left */
+}
+
+.home-third-section {
+  margin-top: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
+
+.home-third-section::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: white; /* White line */
+}
+
+.home-third-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.home-project-one,
+.home-project-two {
+  padding: 20px;
+  margin: 15px auto;
+  width: 80%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.home-project-one h3,
+.home-project-two h3 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+}
+
+.home-project-one p,
+.home-project-two p {
+  font-size: 1rem;
+  color: #bbb;
+}
+
+.home-project-one:hover,
+.home-project-two:hover {
+  transform: translateY(-10px);
+}
+
+.home-project-one a,
+.home-project-two a {
+  text-decoration: none;
+  color: white;
+}
+
+.home-project-one a:hover,
+.home-project-two a:hover {
+  color: yellow;
+}
