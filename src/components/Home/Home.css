@@ -1,39 +1,46 @@
-.home-first-section {
-  margin-top: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
+.home-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 5%; /* Ensures equal left and right margins */
+}
+
+.home-first-section,
+.home-second-section,
+.home-third-section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px 5%;
+  position: relative; /* Needed for line placement */
 }
 
 .home-first-section h1 {
   font-size: 3rem;
   color: white;
   margin: 10px 0;
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
-.home-second-section {
-  padding: 40px;
-  margin-top: 20px;
-  margin-left: 5%;
-  margin-right: 5%;
-  position: relative;
-  color: white; /* Text color */
+.home-second-section,
+.home-third-section {
+  color: white;
 }
 
-.home-second-section::before {
+.home-second-section::before,
+.home-third-section::before {
   content: "";
   position: absolute;
   top: -10px;
-  left: 0;
-  right: 0;
+  left: 5%; /* Aligns with text */
+  width: 90%; /* Ensures equal margins on both sides */
   height: 1px;
-  background-color: white; /* White line */
+  background-color: white;
 }
 
-.home-second-section h2 {
+.home-second-section h2,
+.home-third-section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
 .home-second-section p {
@@ -42,30 +49,7 @@
   line-height: 1.6;
   max-width: 800px;
   margin: 0 auto;
-  text-align: left; /* Align text to the left */
-}
-
-.home-third-section {
-  margin-top: 40px;
-  margin-left: 5%;
-  margin-right: 5%;
-  position: relative;
-}
-
-.home-third-section::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: white; /* White line */
-}
-
-.home-third-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
 .home-project-one,
