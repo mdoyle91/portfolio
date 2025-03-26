@@ -57,3 +57,21 @@
   margin-left: 0;
   margin-right: 0;
 }
+
+/* Button Styling */
+.about-first-section button {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px; /* Space between the text and the button */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Button Hover Effect */
+.about-first-section button:hover {
+  background-color: #0056b3;
+}

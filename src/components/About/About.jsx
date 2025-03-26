@@ -14,6 +14,14 @@ const About = () => {
           tenacious, collaborative spirit, I strive to write elegant, intuitive,
           and stylish code that enhances user engagement and accessibility.
         </p>
+        <a
+          href="assets/TEMPLATE_Doyle_Michael_CoverLetter.docx"
+          download="Mike's Cover Letter"
+          target="_blank"
+        >
+          <button>Download My Resume</button>{" "}
+          {/* <https://stackoverflow.com/questions/55313748/download-file-by-clicking-a-button-in-reactjs */}
+        </a>
       </div>
       <div className="about-second-section">
         <h2>Languages/Frameworks</h2>
