@@ -1,0 +1,59 @@
+/* General Section Styling */
+.about-first-section,
+.about-second-section,
+.about-third-section {
+  color: white;
+  margin: 0 auto;
+  padding: 0 40px; /* Add left and right padding to create margins */
+  max-width: 1200px; /* Limit width */
+}
+
+/* Add padding to the sections for more space between the lines and text */
+.about-first-section,
+.about-second-section,
+.about-third-section {
+  padding-top: 40px; /* Add padding to the top of each section */
+}
+
+/* Styling for the first section (no line) */
+.about-first-section {
+  margin-bottom: 40px;
+}
+
+/* White line between sections */
+.about-second-section::before,
+.about-third-section::before {
+  content: "";
+  display: block;
+  position: relative;
+  margin-top: 40px; /* Add space between the text and the line */
+  margin-left: 0; /* Align line with the left margin */
+  margin-right: 0; /* Align line with the right margin */
+  width: 100%; /* Ensure the line takes up the full width inside the container */
+  height: 1px;
+  background-color: white;
+}
+
+.about-second-section {
+  margin-bottom: 40px;
+}
+
+.about-third-section {
+  margin-bottom: 40px;
+}
+
+/* Keep the H1 and H2 tags from getting too big */
+.about-first-section h1,
+.about-second-section h2,
+.about-third-section h2 {
+  font-size: 2rem; /* Adjust font-size if necessary */
+}
+
+/* Ensure text inside the sections stays within the margin */
+.about-first-section p,
+.about-second-section h2,
+.about-third-section h2 {
+  font-size: 1.2rem; /* Adjust for better readability */
+  margin-left: 0;
+  margin-right: 0;
+}
